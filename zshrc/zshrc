@@ -68,7 +68,7 @@ ZSH_THEME="half-life"
 # Add wisely, as too many plugins slow down shell startup.
 
 # finder
-alias wp='cd /Users/gittaam/workspace'
+alias wp='cd ~/workspace'
 
 
 
@@ -132,6 +132,10 @@ alias gcp='git cherry-pick'
 # proxy
 alias proxy-on='export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;echo "proxy turn on";'
 alias proxy-off='unset http_proxy;unset https_proxy;exho "proxy turn off"'
+
+# tmux split 4 panes
+alias tmux4='tmux new-session \; split-window -h \; split-window -v \; split-window -v \; select-layout tiled \; select-pane -t 0'
+
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
