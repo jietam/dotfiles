@@ -1,0 +1,1 @@
+find . -name "setup.sh" -type f -not -path "./setup.sh" -exec sh {} \;

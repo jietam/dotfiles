@@ -1,3 +1,10 @@
+# install dependencies
+
+brew install zsh eza
+
+
 # setting
 
-ln -s dotfiles/zshrc/zshrc ~/.zshrc
+cp zshrc ~/.zshrc
+
+mkdir -pv ~/.config/zsh && cp -rf config/*.zsh ~/.config/zsh/
