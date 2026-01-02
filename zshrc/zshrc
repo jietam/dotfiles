@@ -24,7 +24,7 @@ source $ZSH/oh-my-zsh.sh
 alias proxy-on='export http_proxy=http://127.0.0.1:7890;export https_proxy=http://127.0.0.1:7890;echo "proxy turn on";'
 alias proxy-off='unset http_proxy;unset https_proxy;exho "proxy turn off"'
 
-source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -35,4 +35,4 @@ for config (${HOME}/.config/zsh/*.zsh) source $config;alias p='proxychains4'
 
 export SCRCPY_SERVER_PATH=/Applications/极空间.app/Contents/Resources/app.asar.unpacked/bin/platform-tools/scrcpy-server
 export PATH=$PATH:/Applications/极空间.app/Contents/Resources/app.asar.unpacked/bin/platform-tools
-alias claude="/Users/pixel/.claude/local/claude"
+alias claude="$HOME/.claude/local/claude"

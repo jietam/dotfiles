@@ -27,3 +27,4 @@ alias cat='bat'
 
 # proxychains
 alias p='proxychains4'
+
