@@ -25,6 +25,5 @@ alias gcp='git cherry-pick'
 alias t='tmux'
 alias cat='bat'
 
-# proxychains
-alias p='proxychains4'
+
 

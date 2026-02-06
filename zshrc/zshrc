@@ -45,4 +45,18 @@ for config (${HOME}/.config/zsh/*.zsh) source $config;alias p='proxychains4'
 
 export SCRCPY_SERVER_PATH=/Applications/极空间.app/Contents/Resources/app.asar.unpacked/bin/platform-tools/scrcpy-server
 export PATH=$PATH:/Applications/极空间.app/Contents/Resources/app.asar.unpacked/bin/platform-tools
-alias claude="$HOME/.claude/local/claude"
+
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# Amp CLI
+export PATH="$HOME/.amp/bin:$PATH"
+
+. "$HOME/.local/bin/env"
+
+# bun completions
+[ -s "/Users/tanjie/.bun/_bun" ] && source "/Users/tanjie/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
